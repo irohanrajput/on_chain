@@ -9,7 +9,7 @@ async function check_balance (walletAddress: string){
 
         const balanceInSOL:number = balanceInLamports / LAMPORTS_PER_SOL;
 
-        console.log(`The wallet ${walletAddress} has a balance of ${balanceInSOL} SOL`);
+        console.log(balanceInSOL);
         
 
     }
@@ -19,5 +19,13 @@ async function check_balance (walletAddress: string){
 }
 
 
+async function main() {
+    console.log(`sender's balance :`);
+    await check_balance("HppEDRNKQQPqcn5SHhHRaiqiZcXzeVUkLjt8LwAfVeP5");
+    
+    console.log(`receiver's balance :`);
+    await check_balance("2omGfyaBcwoJJj1NP4aXE5jkkhit3tcowYpdc92FPjWo");
+    
+}
 
-check_balance("HppEDRNKQQPqcn5SHhHRaiqiZcXzedVUkLjt8LwAfVeP5"); 
+main().catch(err => console.error("Error in main:", err));
