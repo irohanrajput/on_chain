@@ -98,3 +98,9 @@ $RECYCLE.BIN/
 # Other
 *.tgz
 *.lock-wscript
+
+
+*wallet.json
+node_modules
+target
+.DS_Store

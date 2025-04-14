@@ -5,13 +5,13 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-anchor_counter = "JPLxjsCtwMuLj9zBpyfoveeMvnwaatQ1bcBy7yTckvn"
+hello = "3E9Qcm259vuxwyYK2hEBf6hArgBUbxn2fssS5e6Jdv5Z"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "http://127.0.0.1:8897"
+cluster = "Localnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
